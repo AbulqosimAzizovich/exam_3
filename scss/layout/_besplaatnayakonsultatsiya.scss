@@ -1,0 +1,633 @@
+#besplaatnayakonsultatsiya {
+  .besplaatnayakonsultatsiya-wrapper {
+    .besplatnaya-h3 {
+      color: #140a32;
+      font-family: OpenSans-Bold;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -0.96px;
+      margin-bottom: 15px;
+    }
+    .vopros {
+      color: #140a32;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%;
+      margin-bottom: 30px;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 80px;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        border-radius: 20px;
+        border: 1px solid rgba(47, 43, 67, 0.15);
+        width: 270px;
+        height: 180px;
+        &:hover {
+          box-shadow: 0px 0px 5px silver;
+        }
+        .content {
+          display: flex;
+          flex-direction: column;
+          row-gap: 15px;
+          img {
+            width: 24px;
+            height: 24px;
+          }
+          p {
+            color: #140a32;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+          .tel-nomer {
+            color: #140a32;
+            font-family: OpenSans-Bold;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+        }
+        a {
+          color: #33836e;
+          font-family: OpenSans-Semibold;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+      }
+    }
+    .banner {
+      display: flex;
+      width: 1140px;
+      height: 200px;
+      border-radius: 20px;
+      background: #33836e;
+      position: relative;
+      overflow: hidden;
+      .woman-working {
+        z-index: 2;
+        margin-left: 36px;
+      }
+      .woman-working-small {
+        display: none;
+      }
+      .round {
+        position: absolute;
+        top: 30px;
+      }
+      .banner-content {
+        padding-top: 50px;
+        h3 {
+          color: #fff;
+          font-family: OpenSans-Semibold;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          margin-bottom: 10px;
+        }
+        .tel-nomer2 {
+          color: #fff;
+          font-family: OpenSans-Bold;
+          font-size: 42px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: -1.26px;
+        }
+      }
+      .yuristlar {
+        padding-top: 50px;
+        margin-left: 116px;
+        width: 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        &-p {
+          color: #fff;
+          text-align: center;
+          font-family: OpenSans-Semibold;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          padding-bottom: 20px;
+        }
+        .rasmlar {
+          position: relative;
+          .e15 {
+            z-index: 1;
+          }
+          .e16 {
+            position: absolute;
+            z-index: 2;
+            left: 33px;
+          }
+          .e17 {
+            position: absolute;
+            z-index: 3;
+            left: 66px;
+          }
+          .e18 {
+            position: absolute;
+            z-index: 4;
+            left: 98px;
+          }
+          .e19 {
+            position: absolute;
+            z-index: 5;
+            left: 130px;
+          }
+          .e20 {
+            position: absolute;
+            z-index: 6;
+            left: 162px;
+          }
+          .e21 {
+            position: absolute;
+            z-index: 6;
+            left: 192px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1179px) {
+  .besplaatnayakonsultatsiya-wrapper {
+    .cards {
+      display: grid;
+
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      justify-content: center;
+
+      .card {
+        width: 240px !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1059px) {
+  .besplaatnayakonsultatsiya-wrapper {
+    .cards {
+      display: grid;
+
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      justify-content: center;
+
+      .card {
+        width: 200px !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #besplaatnayakonsultatsiya {
+    .besplaatnayakonsultatsiya-wrapper {
+      margin-top: 40px;
+      .besplatnaya-h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+      .vopros {
+        color: #140a32;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        margin-bottom: 20px;
+      }
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 40px;
+
+        .card {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 20px;
+          border-radius: 20px;
+          border: 1px solid rgba(47, 43, 67, 0.15);
+          width: 175px;
+          height: 191px;
+
+          .content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+            img {
+              width: 24px;
+              height: 24px;
+            }
+            p {
+              color: #140a32;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+            .tel-nomer {
+              color: #140a32;
+              font-family: OpenSans-Bold;
+              font-size: 17px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            }
+          }
+          a {
+            color: #33836e;
+            font-family: OpenSans-Semibold;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+          }
+        }
+      }
+      .banner {
+        display: flex;
+        // flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        min-width: 57px;
+        height: 291px;
+        border-radius: 20px;
+        background: #33836e;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 40px;
+        .woman-working {
+          display: none;
+        }
+        .woman-working-small {
+          display: block;
+          height: 192px;
+          width: 220px;
+          position: absolute;
+          bottom: 0;
+          z-index: 5;
+        }
+
+        .round {
+          position: absolute;
+          top: 130px;
+          left: -65px;
+        }
+        .banner-content {
+          padding-top: 0;
+          margin-top: 30px;
+          margin-left: auto;
+          z-index: 10;
+          width: 254px;
+          height: 79px;
+          h3 {
+            color: #fff;
+            font-family: OpenSans-Semibold;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 0px;
+          }
+          .tel-nomer2 {
+            color: #fff;
+            font-family: OpenSans-Bold;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -1.26px;
+          }
+        }
+        .yuristlar {
+          padding-top: 25px;
+          width: 260px;
+          display: flex;
+          flex-direction: column;
+          // margin-left: 150px;
+          &-p {
+            color: #fff;
+            text-align: center;
+            font-family: OpenSans-Semibold;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            padding-bottom: 10px;
+            z-index: 40;
+          }
+          .rasmlar {
+            position: relative;
+            .e15 {
+              width: 40px;
+              height: 40px;
+              z-index: 11;
+            }
+            .e16 {
+              width: 40px;
+              height: 40px;
+              position: absolute;
+              z-index: 12;
+              left: 24px;
+            }
+            .e17 {
+              width: 40px;
+              height: 40px;
+              position: absolute;
+              z-index: 13;
+              left: 46px;
+            }
+            .e18 {
+              width: 40px;
+              height: 40px;
+              position: absolute;
+              z-index: 14;
+              left: 68px;
+            }
+            .e19 {
+              width: 40px;
+              height: 40px;
+              position: absolute;
+              z-index: 15;
+              left: 90px;
+            }
+            .e20 {
+              width: 40px;
+              height: 40px;
+              position: absolute;
+              z-index: 16;
+              left: 115px;
+            }
+            .e21 {
+              width: 40px;
+              height: 40px;
+              position: absolute;
+              z-index: 17;
+              left: 142px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 889px) {
+  #besplaatnayakonsultatsiya{
+    .besplaatnayakonsultatsiya-wrapper{
+
+      .besplatnaya-h3{
+        font-size: 25px;
+
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 660px) {
+ 
+  #besplaatnayakonsultatsiya{
+
+    .besplaatnayakonsultatsiya-wrapper{
+
+      .banner{
+        
+        .banner-content{
+          h3{
+            font-size: 13px;
+
+          }
+
+          .tel-nomer2 {
+
+            font-size: 32px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 390px) {
+  #besplaatnayakonsultatsiya {
+    .container {
+      padding: 0 15px !important;
+    }
+    .besplaatnayakonsultatsiya-wrapper {
+      margin-top: 40px;
+      .besplatnaya-h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+      .vopros {
+        color: #140a32;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        margin-bottom: 20px;
+      }
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 40px;
+
+        .card {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 20px;
+          border-radius: 20px;
+          border: 1px solid rgba(47, 43, 67, 0.15);
+          width: 175px;
+          height: 191px;
+          .content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+            img {
+              width: 24px;
+              height: 24px;
+            }
+            p {
+              color: #140a32;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+            .tel-nomer {
+              color: #140a32;
+              font-family: OpenSans-Bold;
+              font-size: 17px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            }
+          }
+          a {
+            color: #33836e;
+            font-family: OpenSans-Semibold;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+          }
+        }
+      }
+      .banner {
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+        height: 291px;
+        border-radius: 20px;
+        background: #33836e;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 40px;
+        .woman-working {
+          display: none;
+        }
+        .woman-working-small {
+          display: block;
+          height: 192px;
+          width: 220px;
+          position: absolute;
+          bottom: 0;
+          z-index: 5;
+        }
+
+        .round {
+          position: absolute;
+          top: 130px;
+          left: -65px;
+        }
+        .banner-content {
+          padding-top: 0;
+          margin-top: 30px;
+          margin-left: 30px;
+          z-index: 10;
+          width: 254px;
+          height: 79px;
+          h3 {
+            color: #fff;
+            font-family: OpenSans-Semibold;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 0px;
+          }
+          .tel-nomer2 {
+            color: #fff;
+            font-family: OpenSans-Bold;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -1.26px;
+          }
+        }
+        .yuristlar {
+          padding-top: 25px;
+          width: 260px;
+          display: flex;
+          flex-direction: column;
+          margin-left: 150px;
+          &-p {
+            color: #fff;
+            text-align: center;
+            font-family: OpenSans-Semibold;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            padding-bottom: 10px;
+            z-index: 40;
+          }
+          .rasmlar {
+            position: relative;
+            .e15 {
+              width: 40px;
+              height: 40px;
+              z-index: 11;
+            }
+            .e16 {
+              width: 40px;
+              height: 40px;
+              position: absolute;
+              z-index: 12;
+              left: 24px;
+            }
+            .e17 {
+              width: 40px;
+              height: 40px;
+              position: absolute;
+              z-index: 13;
+              left: 46px;
+            }
+            .e18 {
+              width: 40px;
+              height: 40px;
+              position: absolute;
+              z-index: 14;
+              left: 68px;
+            }
+            .e19 {
+              width: 40px;
+              height: 40px;
+              position: absolute;
+              z-index: 15;
+              left: 90px;
+            }
+            .e20 {
+              width: 40px;
+              height: 40px;
+              position: absolute;
+              z-index: 16;
+              left: 115px;
+            }
+            .e21 {
+              width: 40px;
+              height: 40px;
+              position: absolute;
+              z-index: 17;
+              left: 142px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

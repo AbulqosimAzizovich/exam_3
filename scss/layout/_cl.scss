@@ -1,0 +1,231 @@
+.client {
+  .cl__wrapper {
+    h1 {
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -0.96px;
+      text-align: start;
+    }
+
+    &--about {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      &-card {
+        width: 367px;
+        height: 421px;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 20px;
+        border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+        position: relative;
+        &_fr {
+          color: var(--base-black, #140a32);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%;
+        }
+
+        &_ques {
+          position: absolute;
+          bottom: 0;
+          margin-bottom: 30px;
+
+          p {
+            color: var(--gray-medium, rgba(47, 43, 67, 0.5));
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+
+          a {
+            color: var(--green, #33836e);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150%;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .cl__wrapper_item {
+      display: none;
+    }
+  }
+}
+
+.card__data {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 24px;
+  div {
+    h3 {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    p {
+      color: var(--gray-medium, rgba(47, 43, 67, 0.5));
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
+@media only screen and (max-width: 889px) {
+
+  .client{
+    
+    .cl__wrapper{
+
+      h1{
+        font-size: 25px;
+      }
+
+      .cl__wrapper--about-card{
+        .cl__wrapper--about-card_fr{
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 744px) {
+
+  .client{
+    .cl__wrapper{
+      &--about{
+        
+        &-card{
+          max-width: 213px;
+
+          .card__data{
+            
+            h3{
+              font-size: 15px;
+            }
+            p{
+              font-size: 13px;
+            }
+          }
+          &_fr{
+            font-size: 15px;
+          }
+
+          &_ques{
+            
+            p{
+              font-size: 12px;
+            }
+
+            a{
+              font-size: 13px;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 688px) {
+  .client{
+    .cl__wrapper{
+      .carousel{
+        display: none;
+      }
+
+      .cl__wrapper_item{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        overflow-x: scroll;
+      }
+      .md{
+        min-width: 240px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 390px) {
+
+  .client {
+    .cl__wrapper {
+      h1 {
+        color: var(--base-black, #140a32);
+        font-size: 20px;
+        font-family: OpenSans-Bold;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.6px; 
+      }
+      .cl__wrapper_item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        overflow-x: scroll;
+        .md {
+          min-width: 320px;
+          min-height: 366px;
+          padding: 30px;
+          background-color: #fff;
+          border-radius: 20px;
+          border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+          position: relative;
+        }
+      }
+    }
+  }
+  .carousel {
+    display: none;
+  }
+
+  .md_fr {
+    color: var(--base-black, #140a32);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+  }
+
+  .md_ques {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 30px;
+
+    p {
+      color: var(--gray-medium, rgba(47, 43, 67, 0.5));
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    a {
+      color: var(--green, #33836e);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%;
+      text-decoration: none;
+    }
+  }
+}

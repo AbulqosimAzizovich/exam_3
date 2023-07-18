@@ -1,0 +1,66 @@
+#yuridikpomosh {
+    .yuridikpomosh-wrapper {
+        margin-top: 101px;
+        margin-bottom: 80px;
+        .yuridikpomosh-h3 {
+            color: #140a32;
+            font-family: OpenSans-Bold;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -0.96px;
+            margin-bottom: 20px;
+        }
+        .yuridikpomosh-p {
+            color: #140a32;
+            font-family: OpenSans-Regular;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%;
+        }
+    }
+}
+
+@media only screen and (max-width: 889px) {
+    #yuridikpomosh{
+        .yuridikpomosh-wrapper{
+
+            .yuridikpomosh-h3{
+                font-size: 25px;
+            }
+            .yuridikpomosh-p{
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 390px) {
+    #yuridikpomosh {
+        .yuridikpomosh-wrapper {
+            margin-top: 42.5px;
+            margin-bottom: 0px;
+            .yuridikpomosh-h3 {
+                color: #140a32;
+                font-family: OpenSans-Bold;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -0.96px;
+                margin-bottom: 20px;
+            }
+            .yuridikpomosh-p {
+                color: #140a32;
+                font-family: OpenSans-Regular;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%;
+            }
+        }
+    }
+}

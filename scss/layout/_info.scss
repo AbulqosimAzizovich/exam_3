@@ -1,0 +1,108 @@
+body {
+  #information {
+  
+    padding-top: 80px;
+    .container {
+      h1 {
+        color: $colorBlack;
+        font-family: OpenSans-Bold;
+        font-size: 32px;
+        letter-spacing: -0.96px;
+      }
+      .mainWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+        .card {
+          width: calc(50% - 10px);
+          height: 287px;
+          padding: 20px;
+          border-radius: 20px;
+          margin-bottom: 20px;
+          border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+          .flexBox {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-bottom: 10px;
+            img {
+              width: 24px;
+              height: 24px;
+            }
+            h3 {
+              font-size: 16px;
+              font-weight: 600;
+              color: $colorBlack;
+              padding-bottom: 5px;
+              border-bottom: 1px solid #33836e;
+            }
+          }
+          p {
+            color: var(--gray-high, rgba(47, 43, 67, 0.7));
+            font-size: 14px;
+            line-height: 150%;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1008px) {
+  body{
+
+    #information{
+      .container{
+        .card{
+          overflow-y: scroll;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 889px) {
+  #information {
+    h1{
+      font-size: 25px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  body {
+    #information {
+      padding-top: 40px;
+      .container {
+        padding: 0 15px;
+        h1 {
+          font-size: 20px;
+          letter-spacing: -0.6px;
+        }
+        .mainWrapper {
+          display: flex;
+          flex-wrap: nowrap;
+          overflow-x: scroll;
+          gap: 10px;
+
+          .card {
+            min-width: 319px !important;
+            min-height: 344px;
+            .flexBox {
+              h3 {
+                font-family: OpenSans-Light;
+                font-size: 14px;
+              }
+            }
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

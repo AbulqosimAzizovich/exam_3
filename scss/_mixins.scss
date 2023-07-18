@@ -1,0 +1,24 @@
+
+
+
+
+@mixin font-style($f-size, $f-family, $color, $transform:none) {
+    font-size: $f-size;
+    font-family: $f-family, sans-serif;
+    color: $color;
+    text-transform: $transform;
+}
+
+@mixin flex($f-direction:row, $j-content:flex-start, $a-items:stretch, $gap:0px) {
+    display: flex;
+    flex-direction: $f-direction;
+    justify-content: $j-content;
+    align-items: $a-items;
+    gap: $gap;
+}
+
+@mixin bgImage($size, $b-position) {
+    background-repeat: no-repeat;
+    background-size: $size;
+    background-position: $b-position;
+}

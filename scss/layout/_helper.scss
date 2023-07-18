@@ -1,0 +1,446 @@
+body {
+  #helper {
+    padding-top: 80px;
+    .container {
+      .wrapper {
+        h1 {
+          color: $colorBlack;
+          font-family: OpenSans-bold;
+          font-size: 32px;
+          letter-spacing: -0.96px;
+          margin-bottom: 30px;
+        }
+        .cardBox {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          gap: 20px;
+          .card {
+            width: calc(560px - 10px);
+            height: 180px;
+            display: flex;
+            border-radius: 20px;
+            padding: 30px;
+
+            border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+            .leftBox {
+              width: 110px;
+              height: 110px;
+              padding: 35px;
+              border-radius: 50%;
+              background: #ebf2f0;
+              margin-right: 20px;
+              img {
+                width: 40px;
+                height: 40px;
+              }
+            }
+            .rightBox {
+              p {
+                color: $colorBlack;
+                font-family: OpenSans-Regular;
+                font-size: 16px;
+                line-height: 150%;
+                a {
+                  text-decoration: none;
+                  color: $colorBlack;
+                  font-family: OpenSans-Bold;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #yourChoose {
+    padding-top: 80px;
+    .container {
+      .wrapper {
+        .cardMain {
+          display: flex;
+          align-items: center;
+          .leftCard {
+            h1 {
+              color: $colorBlack;
+              font-family: OpenSans-Bold;
+              font-size: 32px;
+              letter-spacing: -0.96px;
+              margin-bottom: 20px;
+            }
+            p {
+              color: $colorBlack;
+              font-family: OpenSans-Regular;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 160%;
+              margin-bottom: 30px;
+            }
+            ul {
+              display: flex;
+              gap: 40px;
+              li {
+                color: var(--green, #33836e);
+                font-family: OpenSans-Bold;
+                font-size: 28px;
+                letter-spacing: -0.84px;
+                list-style: none;
+                padding-bottom: 10px;
+                p {
+                  color: $colorBlack;
+                  font-family: OpenSans-Regular;
+                  font-size: 16px;
+                  margin-bottom: 0;
+                  padding-top: 10px;
+                }
+              }
+            }
+          }
+        }
+        .cardFooter {
+          background-color: #33836e;
+          border-radius: 20px;
+          padding: 30px 60px;
+          display: flex;
+          margin-top: -4px;
+          justify-content: space-between;
+          .cardLeft {
+            p {
+              color: $color-white;
+              font-family: OpenSans-Light;
+              font-size: 24px;
+              margin-bottom: 10px;
+            }
+            a {
+              text-decoration: none;
+              color: $color-white;
+              font-family: OpenSans-Bold;
+              font-size: 42px;
+              letter-spacing: -1.26px;
+            }
+          }
+          .cardRight {
+            p {
+              color: $color-white;
+              font-family: OpenSans-Bold;
+              font-size: 18px;
+              letter-spacing: -1.26px;
+              margin-bottom: 16px;
+            }
+            .inpBox {
+              display: flex;
+              .inpFlex {
+                background-color: $color-white;
+                padding: 8px 16px;
+                border-radius: 10px;
+                label {
+                  color: var(--gray-low, rgba(47, 43, 67, 0.4));
+                  font-family: OpenSans-Regular;
+                  font-size: 12px;
+                  padding-bottom: 3px;
+                }
+                input {
+                  border: none;
+                  outline-style: none;
+                }
+              }
+              button {
+                padding: 16px 36px;
+                color: $color-white;
+                text-align: center;
+                font-family: OpenSans-Light;
+                font-size: 16px;
+                background-color: transparent;
+                border-radius: 10px;
+                border: 1px solid var(--base-white, #fff);
+                margin-left: 15px;
+              }
+            }
+            .pp {
+              color: rgba(255, 255, 255, 0.5);
+              font-family: OpenSans-Light;
+              font-size: 12px;
+              margin-top: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  body {
+    #helper {
+      .container {
+        .wrapper {
+          .cardBox {
+            gap: 10px;
+            justify-content: space-evenly;
+            .card {
+              width: 420px;
+              height: 250px;
+              p {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    #yourChoose {
+      .wrapper {
+        .cardMain {
+          justify-content: space-between;
+          .leftCard {
+            width: 600px;
+            h1 {
+              font-size: 25px !important;
+            }
+            p {
+              font-size: 12px !important;
+            }
+
+            ul {
+              li {
+                font-size: 20px !important;
+                p {
+                  font-size: 12px !important;
+                }
+              }
+            }
+          }
+
+          .rightCard {
+            min-width: 57px !important;
+            width: 100%;
+          }
+        }
+
+        .cardFooter {
+          min-width: 57px !important;
+          width: 100%;
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 889px) {
+  body {
+    #helper {
+        h1{
+          font-size: 25px !important;
+        }
+      .cardBox {
+        .card {
+          max-width: 350px !important;
+          .rightBox {
+            p {
+              font-size: 13px !important;
+            }
+          }
+
+          .leftBox {
+            width: 70px !important;
+            height: 70px !important;
+            padding: 15px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 807px) {
+  body {
+    #yourChoose {
+      .container {
+        .wrapper {
+          .cardMain {
+            flex-direction: row-reverse;
+            display: block !important;
+
+            .leftCard {
+              text-align: center;
+              margin: 0 auto;
+
+              h1{
+                font-size: 32px ;
+              }
+              p{
+                font-size: 14px !important;
+              }
+              ul {
+                justify-content: center;
+              }
+            }
+
+            .rightCard{
+              margin: 0 90px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    #helper {
+      padding-top: 40px;
+      .container {
+        padding: 0 15px;
+        .wrapper {
+          h1 {
+            font-size: 20px;
+            margin-bottom: 20px;
+          }
+          .cardBox {
+            flex-wrap: wrap;
+
+            .card {
+              width: 359px;
+              height: 214px;
+              padding: 20px;
+              display: block;
+              .leftBox {
+                width: 54px;
+                height: 54px;
+                padding: 15px;
+                margin-bottom: 15px;
+                img {
+                  width: 24px;
+                  height: 24px;
+                }
+              }
+              .rightBox {
+                p {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  body {
+    #helper {
+      padding-top: 40px;
+      .container {
+        padding: 0 15px;
+        .wrapper {
+          h1 {
+            font-size: 20px;
+            margin-bottom: 20px;
+          }
+          .cardBox {
+            flex-wrap: wrap;
+
+            .card {
+              width: 359px;
+              height: 214px;
+              padding: 20px;
+              display: block;
+              .leftBox {
+                width: 54px;
+                height: 54px;
+                padding: 15px;
+                margin-bottom: 15px;
+                img {
+                  width: 24px;
+                  height: 24px;
+                }
+              }
+              .rightBox {
+                p {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  body {
+    #yourChoose {
+      .container {
+        .wrapper {
+          .cardMain {
+            display: block;
+            .leftCard {
+              h1 {
+                font-size: 20px;
+              }
+              p {
+                font-size: 14px;
+              }
+              ul {
+                li {
+                  font-size: 20px;
+                  p {
+                    font-size: 20px;
+                  }
+                }
+              }
+            }
+            .rightCard {
+              margin-top: 30px;
+              img {
+                width: 360px;
+                height: 247px;
+              }
+            }
+          }
+          .cardFooter {
+            display: block;
+            padding: 20px;
+            .cardLeft {
+              p {
+                font-size: 18px;
+              }
+              a {
+                font-size: 36px;
+              }
+            }
+            .cardRight {
+              p {
+                font-size: 16px;
+                margin-top: 15px;
+              }
+              .inpBox {
+                display: block;
+                width: 100%;
+                label {
+                  font-size: 12px;
+                }
+              }
+              button {
+                width: 100%;
+                margin-left: 0 !important;
+                margin-top: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
