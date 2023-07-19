@@ -924,7 +924,6 @@ body {
   overflow: hidden;
   display: flex;
   align-items: center;
-  background: red;
   justify-content: center;
 }
 .success1 .sc_wrapper img {
