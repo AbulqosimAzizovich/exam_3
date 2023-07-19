@@ -508,7 +508,7 @@ body {
 
 #blur {
   width: 100%;
-  height: 100vh;
+  height: 300vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -525,7 +525,6 @@ body {
   position: relative;
   width: 360px;
   height: 527px;
-  background: red;
   padding: 1px 20px 20px 20px;
 }
 .modal_res .res_wrapper h1 {
@@ -709,6 +708,150 @@ body {
     border: none;
     background: #e5e5e5;
   }
+  .modal_res {
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+  }
+  .modal_res .res_wrapper {
+    position: relative;
+    width: 360px;
+    height: 527px;
+    padding: 1px 20px 20px 20px;
+  }
+  .modal_res .res_wrapper h1 {
+    color: var(--base-black, #140a32);
+    font-family: "OpenSans-Bold";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.66px;
+  }
+  .modal_res .res_wrapper form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  .modal_res .res_wrapper form .form_card {
+    width: 100% !important;
+    box-sizing: border-box;
+    width: 205px;
+    height: 56px;
+    padding: 8px 14px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+    background: var(--base-white, #fff);
+  }
+  .modal_res .res_wrapper form .form_card input {
+    border: none;
+    outline-style: none;
+  }
+  .modal_res .res_wrapper form .form_card label {
+    color: var(--gray-low, rgba(47, 43, 67, 0.4));
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .modal_res .res_wrapper form button {
+    width: 100%;
+    height: 56px;
+    border-radius: 10px;
+    background: var(--base-black, #140a32);
+    padding: 16px 24px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--base-white, #fff);
+    border: none;
+    cursor: pointer;
+  }
+  .modal_res .res_wrapper .pb {
+    color: var(--gray-medium, rgba(47, 43, 67, 0.5));
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 15px;
+  }
+  .modal_res .res_wrapper .onl {
+    display: flex;
+    justify-content: end;
+  }
+  .modal_res .res_wrapper .onl img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .modal_res .res_wrapper .onl .right_mdsd {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 30px;
+    gap: 50px;
+  }
+  .modal_res .res_wrapper .onl .right_mdsd .rasmlar {
+    position: relative;
+  }
+  .modal_res .res_wrapper .onl .right_mdsd .rasmlar img {
+    width: 40px;
+    height: 40px;
+  }
+  .modal_res .res_wrapper .onl .right_mdsd .rasmlar .e15 {
+    z-index: 1;
+  }
+  .modal_res .res_wrapper .onl .right_mdsd .rasmlar .e16 {
+    position: absolute;
+    z-index: 2;
+    left: 22px;
+  }
+  .modal_res .res_wrapper .onl .right_mdsd .rasmlar .e17 {
+    position: absolute;
+    z-index: 3;
+    left: 44px;
+  }
+  .modal_res .res_wrapper .onl .right_mdsd .rasmlar .e18 {
+    position: absolute;
+    z-index: 4;
+    left: 65px;
+  }
+  .modal_res .res_wrapper .onl .right_mdsd .rasmlar .e19 {
+    position: absolute;
+    z-index: 5;
+    left: 85px;
+  }
+  .modal_res .res_wrapper .onl .right_mdsd .rasmlar .e20 {
+    position: absolute;
+    z-index: 6;
+    left: 105px;
+  }
+  .modal_res .res_wrapper .onl .right_mdsd .rasmlar .e21 {
+    position: absolute;
+    z-index: 6;
+    left: 125px;
+  }
+  .modal_res .res_wrapper .onl .right_mdsd .md_p {
+    color: var(--base-black, #140a32);
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .modal_res .res_wrapper .res_close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #FFFFFF;
+  }
+  .modal_res .res_wrapper .res_close:active {
+    background: #e5e5e5;
+  }
 }
 .success {
   width: 896px;
@@ -765,6 +908,65 @@ body {
   background: #fff;
 }
 .success .sc_wrapper .close_ft:hover {
+  background: #e5e5e5;
+}
+
+.success1 {
+  width: 360px;
+  height: 527px;
+  position: fixed;
+  z-index: 999999;
+  border-radius: 20px;
+  background: var(--base-white, #fff);
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.1);
+  top: 20%;
+  right: 35px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: red;
+  justify-content: center;
+}
+.success1 .sc_wrapper img {
+  padding: 15px 294px 10px 294px;
+}
+.success1 .sc_wrapper h1 {
+  color: var(--base-black, #140a32);
+  text-align: center;
+  font-family: "OpenSans-Bold";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.66px;
+}
+.success1 .sc_wrapper p {
+  color: var(--base-black, #140a32);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.success1 .sc_wrapper .zakrit1 {
+  background: #33836E;
+  padding: 16px 36px 18px 36px;
+  border-radius: 10px;
+  background: var(--green, #33836e);
+  font-size: 14px;
+  color: var(--base-white, #fff);
+  font-weight: 600;
+  margin: 30px 242px 0 242px;
+}
+.success1 .sc_wrapper .close_ft1 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+}
+.success1 .sc_wrapper .close_ft1:hover {
   background: #e5e5e5;
 }
 
@@ -1934,6 +2136,26 @@ header .header-down .wrapper .header__user--link {
 #intro .intro__content--connect-text:active {
   background: #33836E;
 }
+#intro .intro__content--connect-btn {
+  display: none !important;
+  font-size: 16px;
+  font-family: "OpenSans-SemiBold", sans-serif;
+  color: #FFFFFF;
+  text-transform: none;
+  width: 253px;
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #33836E;
+  border-radius: 10px;
+}
+#intro .intro__content--connect-btn:hover {
+  background: #81d2bc;
+}
+#intro .intro__content--connect-btn:active {
+  background: #33836E;
+}
 #intro .intro__content--connect-tel {
   display: flex;
   flex-direction: column;
@@ -2286,6 +2508,12 @@ header .header-down .wrapper .header__user--link {
     max-width: 410px;
     display: flex;
     flex-wrap: wrap;
+  }
+  #intro .intro__content--connect-text {
+    display: none;
+  }
+  #intro .intro__content--connect-btn {
+    display: block !important;
   }
 }
 @media only screen and (max-width: 390px) {

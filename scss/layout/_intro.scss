@@ -49,6 +49,23 @@
           background: $color-green;
         }
       }
+      &-btn{
+        display: none !important;
+        @include font-style(16px, $ff-OpenSansSemiBold, $color-white);
+        width: 253px;
+        padding: 16px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-green;
+        border-radius: 10px;
+        &:hover{
+          background: $primary-white-green;
+        }
+        &:active{
+          background: $color-green;
+        }
+      }
       &-tel {
         display: flex;
         flex-direction: column;
@@ -351,6 +368,14 @@
         max-width: 410px;
         display: flex;
         flex-wrap: wrap;
+      }
+
+      &--connect{
+        &-text{display: none;}
+        &-btn{
+          display: block !important;
+          
+        }
       }
     }
   }
