@@ -162,7 +162,7 @@ body {
                   box-shadow: 0px 0px 5px silver;
                 }
 
-                &:active{
+                &:active {
                   box-shadow: none;
                 }
               }
@@ -295,6 +295,77 @@ body {
 
             .rightCard {
               margin: 0 90px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 645px) {
+ body {
+    #helper{
+
+      .container{
+        .wrapper{
+
+          .cardBox{
+
+            .card{
+              
+              width: 250px;
+              display: block;
+              height: 300px;
+            }
+          }
+        }
+      }
+    }
+  
+    #yourChoose {
+      .container {
+        .wrapper {
+          .cardMain {
+            .leftCard {
+              max-width: 400px;
+            }
+
+            .rightCard {
+              img {
+                max-width: 400px;
+                margin: 0 auto;
+              }
+            }
+          }
+
+          .cardFooter {
+            display: block;
+
+            .cardLeft {
+              p {
+                font-size: 18px;
+              }
+
+              a {
+                font-size: 36px;
+              }
+            }
+
+            .cardRight {
+              p {
+                font-size: 16px;
+              }
+            }
+
+            .inpBox {
+              display: block !important;
+
+              button {
+                margin-left: 0px !important;
+                margin-top: 20px;
+                width: 100%;
+              }
             }
           }
         }
@@ -459,6 +530,81 @@ body {
                   font-size: 20px;
                   p {
                     font-size: 20px;
+                  }
+                }
+              }
+            }
+            .rightCard {
+              margin-top: 30px;
+              img {
+                width: 360px;
+                height: 247px;
+              }
+            }
+          }
+          .cardFooter {
+            display: block;
+            padding: 20px;
+            .cardLeft {
+              p {
+                font-size: 18px;
+              }
+              a {
+                font-size: 36px;
+              }
+            }
+            .cardRight {
+              p {
+                font-size: 16px;
+                margin-top: 15px;
+              }
+              .inpBox {
+                display: block;
+                width: 100%;
+                label {
+                  font-size: 12px;
+                }
+              }
+              button {
+                width: 100%;
+                margin-left: 0 !important;
+                margin-top: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 375px) {
+  body {
+    #yourChoose {
+      .container {
+        .wrapper {
+          .cardMain {
+            max-width: 370px !important;
+            display: block;
+            .leftCard {
+              h1 {
+                text-align: start;
+                font-size: 16px;
+              }
+              p {
+                width: 360px;
+                text-align: start;
+                font-size: 12px;
+              }
+              ul {
+                display: flex;
+                justify-content: start;
+                li {
+                  width: 81px;
+                  font-size: 16px;
+                  p {
+                    font-size: 16px;
                   }
                 }
               }

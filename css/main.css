@@ -2490,6 +2490,16 @@ header .header-down .wrapper .header__user--link {
     align-self: center;
   }
 }
+@media only screen and (max-width: 645px) {
+  #intro .wrapper .intro-body .intro__content {
+    max-width: 645px;
+    padding: 0 20px;
+    width: 100%;
+  }
+  #intro .wrapper .intro-body .intro__content--title {
+    text-align: center;
+  }
+}
 @media only screen and (max-width: 428px) {
   #intro .intro-body {
     flex-direction: column;
@@ -3183,6 +3193,197 @@ header .header-down .wrapper .header__user--link {
     left: 142px;
   }
 }
+@media only screen and (max-width: 375px) {
+  #besplaatnayakonsultatsiya .container {
+    padding: 0 15px !important;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper {
+    margin-top: 40px;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .besplatnaya-h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .vopros {
+    color: #140a32;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 20px;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(47, 43, 67, 0.15);
+    width: 155px !important;
+    height: 191px;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .cards .card .content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .cards .card .content img {
+    width: 24px;
+    height: 24px;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .cards .card .content p {
+    color: #140a32;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .cards .card .content .tel-nomer {
+    color: #140a32;
+    font-family: OpenSans-Bold;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .cards .card a {
+    color: #33836e;
+    font-family: OpenSans-Semibold;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .banner {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 291px;
+    border-radius: 20px;
+    background: #33836e;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .banner .woman-working {
+    display: none;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .banner .woman-working-small {
+    display: block;
+    height: 192px;
+    width: 220px;
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .banner .round {
+    position: absolute;
+    top: 130px;
+    left: -65px;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .banner .banner-content {
+    padding-top: 0;
+    margin-top: 30px;
+    margin-left: 30px;
+    z-index: 10;
+    width: 254px;
+    height: 79px;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .banner .banner-content h3 {
+    color: #fff;
+    font-family: OpenSans-Semibold;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 0px;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .banner .banner-content .tel-nomer2 {
+    color: #fff;
+    font-family: OpenSans-Bold;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.26px;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .banner .yuristlar {
+    padding-top: 25px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .banner .yuristlar-p {
+    color: #fff;
+    text-align: center;
+    font-family: OpenSans-Semibold;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 10px;
+    z-index: 40;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .banner .yuristlar .rasmlar {
+    position: relative;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .banner .yuristlar .rasmlar .e15 {
+    width: 40px;
+    height: 40px;
+    z-index: 11;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .banner .yuristlar .rasmlar .e16 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 12;
+    left: 24px;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .banner .yuristlar .rasmlar .e17 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 13;
+    left: 46px;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .banner .yuristlar .rasmlar .e18 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 14;
+    left: 68px;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .banner .yuristlar .rasmlar .e19 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 15;
+    left: 90px;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .banner .yuristlar .rasmlar .e20 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 16;
+    left: 115px;
+  }
+  #besplaatnayakonsultatsiya .besplaatnayakonsultatsiya-wrapper .banner .yuristlar .rasmlar .e21 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 17;
+    left: 142px;
+  }
+}
 body #helper {
   padding-top: 80px;
 }
@@ -3425,6 +3626,40 @@ body #yourChoose .container .wrapper .cardFooter .cardRight .pp {
     margin: 0 90px;
   }
 }
+@media only screen and (max-width: 645px) {
+  body #helper .container .wrapper .cardBox .card {
+    width: 250px;
+    display: block;
+    height: 300px;
+  }
+  body #yourChoose .container .wrapper .cardMain .leftCard {
+    max-width: 400px;
+  }
+  body #yourChoose .container .wrapper .cardMain .rightCard img {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  body #yourChoose .container .wrapper .cardFooter {
+    display: block;
+  }
+  body #yourChoose .container .wrapper .cardFooter .cardLeft p {
+    font-size: 18px;
+  }
+  body #yourChoose .container .wrapper .cardFooter .cardLeft a {
+    font-size: 36px;
+  }
+  body #yourChoose .container .wrapper .cardFooter .cardRight p {
+    font-size: 16px;
+  }
+  body #yourChoose .container .wrapper .cardFooter .inpBox {
+    display: block !important;
+  }
+  body #yourChoose .container .wrapper .cardFooter .inpBox button {
+    margin-left: 0px !important;
+    margin-top: 20px;
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 500px) {
   body #helper {
     padding-top: 40px;
@@ -3537,6 +3772,65 @@ body #yourChoose .container .wrapper .cardFooter .cardRight .pp {
   }
   body #yourChoose .container .wrapper .cardMain .leftCard ul li p {
     font-size: 20px;
+  }
+  body #yourChoose .container .wrapper .cardMain .rightCard {
+    margin-top: 30px;
+  }
+  body #yourChoose .container .wrapper .cardMain .rightCard img {
+    width: 360px;
+    height: 247px;
+  }
+  body #yourChoose .container .wrapper .cardFooter {
+    display: block;
+    padding: 20px;
+  }
+  body #yourChoose .container .wrapper .cardFooter .cardLeft p {
+    font-size: 18px;
+  }
+  body #yourChoose .container .wrapper .cardFooter .cardLeft a {
+    font-size: 36px;
+  }
+  body #yourChoose .container .wrapper .cardFooter .cardRight p {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  body #yourChoose .container .wrapper .cardFooter .cardRight .inpBox {
+    display: block;
+    width: 100%;
+  }
+  body #yourChoose .container .wrapper .cardFooter .cardRight .inpBox label {
+    font-size: 12px;
+  }
+  body #yourChoose .container .wrapper .cardFooter .cardRight button {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  body #yourChoose .container .wrapper .cardMain {
+    max-width: 370px !important;
+    display: block;
+  }
+  body #yourChoose .container .wrapper .cardMain .leftCard h1 {
+    text-align: start;
+    font-size: 16px;
+  }
+  body #yourChoose .container .wrapper .cardMain .leftCard p {
+    width: 360px;
+    text-align: start;
+    font-size: 12px;
+  }
+  body #yourChoose .container .wrapper .cardMain .leftCard ul {
+    display: flex;
+    justify-content: start;
+  }
+  body #yourChoose .container .wrapper .cardMain .leftCard ul li {
+    width: 81px;
+    font-size: 16px;
+  }
+  body #yourChoose .container .wrapper .cardMain .leftCard ul li p {
+    font-size: 16px;
   }
   body #yourChoose .container .wrapper .cardMain .rightCard {
     margin-top: 30px;

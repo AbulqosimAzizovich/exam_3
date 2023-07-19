@@ -349,6 +349,24 @@
   }
 }
 
+@media only screen and (max-width: 645px) {
+  #intro{
+
+    .wrapper{
+      .intro-body{
+        .intro__content{
+          max-width: 645px;
+          padding: 0 20px;
+          width: 100%;
+          &--title{
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 428px) {
   #intro{
 
