@@ -796,9 +796,6 @@ body {
     padding: 0 10px;
   }
 }
-header {
-  display: none;
-}
 header .header-up {
   width: 100%;
   padding-top: 20px !important;
