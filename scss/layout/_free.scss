@@ -87,36 +87,61 @@
 }
 
 @media only screen and (max-width: 889px) {
-  .free{
-    .free__wrapper{
-      h1{
-        font-size: 25px ;
+  .free {
+    .free__wrapper {
+      h1 {
+        font-size: 25px;
       }
     }
   }
 }
 
-@media only screen and (max-width: 715px){
-  .free{
+@media only screen and (max-width: 715px) {
+  .free {
     margin-bottom: 80px;
-    .free__wrapper{
+    .free__wrapper {
       margin-top: 15px;
       background: #fff;
-      .fr_div{
-
-        form{
+      .fr_div {
+        form {
           display: block;
 
-          .form_card{
+          .form_card {
             background: $primary-grey;
             margin-bottom: 15px;
-            input{
+            input {
               background: $primary-grey;
             }
           }
         }
       }
-      
+    }
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  .free {
+    margin-top: -40px;
+    margin-bottom: 50px;
+    .free__wrapper {
+      padding: 30px 20px;
+      display: block;
+      h1 {
+        font-size: 24px;
+        font-weight: 700;
+        font-family: $ff-OpenSansBold;
+      }
+
+      .fr_div {
+        form {
+          .form_card {
+            width: 100%;
+          }
+          .fr_btn {
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }

@@ -42,6 +42,12 @@
         justify-content: center;
         background-color: $color-green;
         border-radius: 10px;
+        &:hover{
+          background: $primary-white-green;
+        }
+        &:active{
+          background: $color-green;
+        }
       }
       &-tel {
         display: flex;
@@ -223,8 +229,9 @@
       .intro-body {
         .intro__content {
           .intro__content--cards {
+            margin-top: 10px;
             width: 770px !important;
-            justify-content: center;
+           gap: 50px;
           }
         }
       }
@@ -266,6 +273,7 @@
         line-height: 25.6px;
         width: 100%;
         margin-bottom: 30px;
+        padding-left: 20px;
       }
       &--connect {
         display: flex;
@@ -320,6 +328,54 @@
       height: 300px;
       order: -1;
       align-self: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  #intro{
+
+    .intro-body{
+      flex-direction: column;
+    }
+    .intro__content{
+      max-width: 410px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      &--title{
+        text-align: center;
+      }
+      &--cards{
+        max-width: 410px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+  
+}
+
+
+@media only screen and (max-width: 390px) {
+  #intro {
+    .wrapper {
+      .intro-body {
+        margin: 0 auto;
+        .intro__content {
+          
+          .intro__content--cards {
+            margin-top: 10px;
+            display: flex;
+            width: 348px !important;
+            column-gap: 30px;
+            row-gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+          }
+        }
+      }
     }
   }
 }

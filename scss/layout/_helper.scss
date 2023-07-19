@@ -22,8 +22,10 @@ body {
             display: flex;
             border-radius: 20px;
             padding: 30px;
-
             border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+            &:hover {
+              box-shadow: 0px 0px 5px silver;
+            }
             .leftBox {
               width: 110px;
               height: 110px;
@@ -156,6 +158,13 @@ body {
                 border-radius: 10px;
                 border: 1px solid var(--base-white, #fff);
                 margin-left: 15px;
+                &:hover {
+                  box-shadow: 0px 0px 5px silver;
+                }
+
+                &:active{
+                  box-shadow: none;
+                }
               }
             }
             .pp {
@@ -237,9 +246,9 @@ body {
 @media only screen and (max-width: 889px) {
   body {
     #helper {
-        h1{
-          font-size: 25px !important;
-        }
+      h1 {
+        font-size: 25px !important;
+      }
       .cardBox {
         .card {
           max-width: 350px !important;
@@ -273,10 +282,10 @@ body {
               text-align: center;
               margin: 0 auto;
 
-              h1{
-                font-size: 32px ;
+              h1 {
+                font-size: 32px;
               }
-              p{
+              p {
                 font-size: 14px !important;
               }
               ul {
@@ -284,7 +293,7 @@ body {
               }
             }
 
-            .rightCard{
+            .rightCard {
               margin: 0 90px;
             }
           }
@@ -327,6 +336,59 @@ body {
                 p {
                   font-size: 15px;
                 }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  body {
+    #yourChoose {
+      .container {
+        .wrapper {
+          .cardMain {
+            .leftCard {
+              max-width: 400px;
+            }
+
+            .rightCard {
+              img {
+                max-width: 400px;
+                margin: 0 -100px;
+              }
+            }
+          }
+
+          .cardFooter {
+            display: block;
+
+            .cardLeft {
+              p {
+                font-size: 18px;
+              }
+
+              a {
+                font-size: 36px;
+              }
+            }
+
+            .cardRight {
+              p {
+                font-size: 16px;
+              }
+            }
+
+            .inpBox {
+              display: block !important;
+
+              button {
+                margin-left: 0px !important;
+                margin-top: 20px;
+                width: 100%;
               }
             }
           }

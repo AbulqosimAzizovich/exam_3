@@ -436,6 +436,33 @@
 
 }
 
+@media only screen and (max-width: 428px) {
+
+  #besplaatnayakonsultatsiya{
+    .besplaatnayakonsultatsiya-wrapper{
+      .cards{
+        .card{
+          width: 100% !important;
+        }
+      }
+
+      .banner{
+        display: flex;
+        align-items: flex-start;
+        
+        .banner-content{
+          display: none;
+        }
+
+        .yuristlar{
+          display: flex;
+          padding-left: 60px;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 390px) {
   #besplaatnayakonsultatsiya {
     .container {
@@ -462,7 +489,7 @@
         align-items: flex-start;
         gap: 10px;
         margin-bottom: 40px;
-
+        
         .card {
           display: flex;
           flex-direction: column;
@@ -470,7 +497,7 @@
           padding: 20px;
           border-radius: 20px;
           border: 1px solid rgba(47, 43, 67, 0.15);
-          width: 175px;
+          width: 175px !important;
           height: 191px;
           .content {
             display: flex;

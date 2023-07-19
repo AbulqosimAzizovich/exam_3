@@ -27,24 +27,34 @@
       border-radius: 10px;
       margin-top: 30px;
       cursor: pointer;
+      transition: all 0.3s ease;
+      &:hover {
+        background: $primary-green;
+        color: $color-white;
+        box-shadow: 0px 0px 5px silver;
+      }
     }
   }
 }
 
 @media only screen and (max-width: 889px) {
-  .seo{
-
-    .seo__wrapper{
-      h1{
-          font-size: 25px;
+  .seo {
+    .seo__wrapper {
+      h1 {
+        font-size: 25px;
       }
-      p{
+      p {
         font-size: 13px;
       }
-
     }
   }
- }
+}
+
+@media only screen and (max-width: 428px) {
+  .seo {
+    margin-top: 150px;
+  }
+}
 
 @media only screen and (max-width: 390px) {
   .seo {

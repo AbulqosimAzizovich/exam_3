@@ -21,6 +21,9 @@
         border-radius: 20px;
         border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
         position: relative;
+        &:hover {
+          box-shadow: 0px 0px 5px silver;
+        }
         &_fr {
           color: var(--base-black, #140a32);
           font-size: 16px;
@@ -85,17 +88,14 @@
 }
 
 @media only screen and (max-width: 889px) {
-
-  .client{
-    
-    .cl__wrapper{
-
-      h1{
+  .client {
+    .cl__wrapper {
+      h1 {
         font-size: 25px;
       }
 
-      .cl__wrapper--about-card{
-        .cl__wrapper--about-card_fr{
+      .cl__wrapper--about-card {
+        .cl__wrapper--about-card_fr {
           font-size: 15px;
         }
       }
@@ -104,59 +104,53 @@
 }
 
 @media only screen and (max-width: 744px) {
-
-  .client{
-    .cl__wrapper{
-      &--about{
-        
-        &-card{
+  .client {
+    .cl__wrapper {
+      &--about {
+        &-card {
           max-width: 213px;
 
-          .card__data{
-            
-            h3{
+          .card__data {
+            h3 {
               font-size: 15px;
             }
-            p{
+            p {
               font-size: 13px;
             }
           }
-          &_fr{
+          &_fr {
             font-size: 15px;
           }
 
-          &_ques{
-            
-            p{
+          &_ques {
+            p {
               font-size: 12px;
             }
 
-            a{
+            a {
               font-size: 13px;
             }
           }
-
         }
       }
     }
   }
-
 }
 
 @media only screen and (max-width: 688px) {
-  .client{
-    .cl__wrapper{
-      .carousel{
+  .client {
+    .cl__wrapper {
+      .carousel {
         display: none;
       }
 
-      .cl__wrapper_item{
+      .cl__wrapper_item {
         display: flex;
         gap: 15px;
         align-items: center;
         overflow-x: scroll;
       }
-      .md{
+      .md {
         min-width: 240px;
       }
     }
@@ -164,7 +158,6 @@
 }
 
 @media only screen and (max-width: 390px) {
-
   .client {
     .cl__wrapper {
       h1 {
@@ -174,7 +167,7 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        letter-spacing: -0.6px; 
+        letter-spacing: -0.6px;
       }
       .cl__wrapper_item {
         display: flex;
